@@ -9,6 +9,16 @@
 > until the work is published. You are welcome to build on the ideas; please credit
 > Daniel Sambold if you do.
 
+## Collaborate
+
+I am looking for collaborators. What needs work:
+
+- **Absolute girth calibration.** The fitter reads 7 to 12 % wide on a known-truth control. It needs an external width measurement: drone overflights with stations, or a physical phantom.
+- **Re-identification.** No fin, pigment, scar or shape cue has cleared the pilot's bar yet across 995 videos. Ideas and matched photo-ID catalogues welcome.
+- **More views of the same animal.** Paired camera angles, or footage with a known-size referent in frame.
+
+Interested? [Open an issue](https://github.com/dbold23/shark-pose-3d-skeleton/issues/new) or message me on [LinkedIn](https://www.linkedin.com/in/daniel-sambold-620b37221).
+
 ![Per-individual fit pipeline](docs/pipeline.svg)
 
 White sharks cannot be weighed, so body condition has to come from video. A 16-keypoint
