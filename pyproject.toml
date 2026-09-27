@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shark-pose-3d"
+version = "0.1.0"
+description = "3D shark pose and shape estimation from underwater monocular video"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    "torch>=2.1.0",
+    "torchvision>=0.16.0",
+    "omegaconf>=2.3.0",
+    "hydra-core>=1.3.0",
+    "opencv-python>=4.8.0",
+    "scipy>=1.11.0",
+    "trimesh>=4.0.0",
+    "numpy>=1.24.0",
+    "Pillow>=10.0.0",
+    "tensorboard>=2.15.0",
+    "PyYAML>=6.0",
+    "tqdm>=4.66.0",
+    "matplotlib>=3.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0",
+    "ruff>=0.1.0",
+]
+rendering = [
+    "pytorch3d>=0.7.5",
+]
+flow = [
+    "raft-optical-flow>=0.1.0",
+]
+segmentation = [
+    "transformers>=4.35.0",
+]
+dino = [
+    "timm>=0.9.0",
+]
+inference = [
+    "ultralytics>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["shark_pose*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,1 @@
+"""SharkScarAnnotator integration bridge."""
