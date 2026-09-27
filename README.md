@@ -17,7 +17,12 @@ I am looking for collaborators. What needs work:
 - **Re-identification.** No fin, pigment, scar or shape cue has cleared the pilot's bar yet across 995 videos. Ideas and matched photo-ID catalogues welcome.
 - **More views of the same animal.** Paired camera angles, or footage with a known-size referent in frame.
 
-Interested? [Open an issue](https://github.com/dbold23/shark-pose-3d-skeleton/issues/new) or message me on [LinkedIn](https://www.linkedin.com/in/daniel-sambold-620b37221).
+<p>
+  <a href="https://github.com/dbold23/shark-pose-3d-skeleton/issues/new?template=1-collaborate.yml"><img alt="Propose a collaboration" src="https://img.shields.io/badge/Propose%20a%20collaboration-0b1f33?style=for-the-badge&labelColor=2bb3a9&color=2bb3a9"></a>
+  <a href="https://github.com/dbold23/shark-pose-3d-skeleton/issues/new?template=3-share-data.yml"><img alt="Share data or a site" src="https://img.shields.io/badge/Share%20data%20or%20a%20site-0b1f33?style=for-the-badge&labelColor=2bb3a9&color=2bb3a9"></a>
+</p>
+
+<sub>Each button opens a short form. Anything you would rather not post in public: <a href="https://www.linkedin.com/in/daniel-sambold-620b37221">LinkedIn</a>.</sub>
 
 ![Per-individual fit pipeline](docs/pipeline.svg)
 
