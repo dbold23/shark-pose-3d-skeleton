@@ -2,11 +2,12 @@
 
 3D pose and body shape of free-swimming white sharks from monocular underwater video.
 
-> **This is a skeleton.** It is the real module layout, class and function signatures and
-> docstrings of a private research codebase, with every function body replaced by `...`
-> and all data, weights, configuration and credentials left out. It shows how the system
-> is built; it does not run. The full code is private while the work is prepared for
-> publication. Copyright Daniel Sambold, all rights reserved.
+> **Skeleton of an ongoing project, awaiting review.** This is the real module layout,
+> signatures and docstrings, with every function body replaced by `...` and all footage,
+> weights and configuration left out. It does not run, but the docstrings and the outline
+> below are enough to follow the method and build your own. The full code stays private
+> until the work is published. You are welcome to build on the ideas; please credit
+> Daniel Sambold if you do.
 
 ![Per-individual fit pipeline](docs/pipeline.svg)
 
@@ -26,6 +27,19 @@ with a support contract that refuses a measurement the footage cannot back.
 - Now (September 2026): telling individuals apart from their fins, flank pigment, scars
   and shape across 995 videos. The pre-registered pilot has not yet found a cue that
   clears its bar, and the next round is being set up.
+
+## Build your own
+
+1. **Keypoints and masks.** Train a 16-keypoint pose detector on your species and take
+   silhouettes from SAM2 prompted by its box.
+2. **A parametric body.** Rig a template mesh with a joint skeleton, learn a PCA shape
+   space from a few scans or renders, and skin it linearly (`model_3d/`).
+3. **Fit per individual.** Optimise one shared shape and per-frame pose over a window of
+   frames against keypoint reprojection and a soft-silhouette loss, with pose, shape and
+   temporal priors (`encoder/`, `losses/`).
+4. **Measure, and refuse.** Read girth and chords off the fitted mesh, and only report a
+   number the views in that window can actually support (`morphometrics/`).
+5. **Check against truth.** Fit something of known size before quoting anything.
 
 ## Layout
 
