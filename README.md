@@ -14,7 +14,6 @@
 I am looking for collaborators. What needs work:
 
 - **Absolute girth calibration.** The fitter reads 7 to 12 % wide on a known-truth control. It needs an external width measurement: drone overflights with stations, or a physical phantom.
-- **Re-identification.** No fin, pigment, scar or shape cue has cleared the pilot's bar yet across 995 videos. Ideas and matched photo-ID catalogues welcome.
 - **More views of the same animal.** Paired camera angles, or footage with a known-size referent in frame.
 
 <p>
@@ -40,9 +39,8 @@ with a support contract that refuses a measurement the footage cannot back.
 - Not yet quotable: absolute girth. On a known-truth control the fitter reads 7 to 12 %
   wide, and no second view or configuration removed it. Certifying it needs an external
   width measurement (drone stations or a physical phantom).
-- Now (September 2026): telling individuals apart from their fins, flank pigment, scars
-  and shape across 995 videos. The pre-registered pilot has not yet found a cue that
-  clears its bar, and the next round is being set up.
+- Re-identification works on the trailing edge of the dorsal fin, from a set of clean
+  fin crops.
 
 ## Build your own
 
